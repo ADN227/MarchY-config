@@ -1,0 +1,55 @@
+XF86AudioMute
+	pkill -USR1 -x sxhkd
+
+
+super + {1,2,3}
+	setxkbmap {dvorak,latam dvorak,us}
+
+super + button{4,5}
+	bspc desktop -f {next,prev}
+super + button{8,9}
+	bspc node -l {below,above}
+super + {q,a,z}
+	bspc desktop -f {3,2,1}
+super + {w,s,x}
+	bspc desktop -f {4,5,6}
+super + {Up,Left,Down,Right}
+	bspc node -t {fullscreen,floating,tiled,pseudo_tiled}
+
+super + {i,o,p}
+	{audacity,gimp,kdenlive}
+super + {k,l,semicolon}
+	{libreoffice,tilix -e ranger,xsane}
+super + {comma,period,slash}
+	{discord,brave,firefox}
+
+super + Return
+	tilix
+
+
+super + ctrl + button{4,5}
+	bspc config window_gap $((`bspc config window_gap` {-,+} 5 ))
+super + ctrl + {a,s}
+	bspc node -d {prev ; bspc desktop -f prev,next ; bspc desktop -f next}
+super + ctrl + {x,z}
+	bspc node -m {prev,next}; bspc monitor -f {prev,next}
+super + ctrl + {u,i,o,p}
+	{killall picom ; xsecurelock ; picom,xbacklight -dec 10,scrot -s Imagenes/caps/K.jpg ; tilix -e ranger Imagenes/caps,xbacklight -inc 10}
+super + ctrl + {j,k,l,semicolon}
+	{amixer set Master 2%+,amixer set Master toggle, playerctl stop,amixer set Capture toggle,}
+super + ctrl + {m,comma,period,slash}
+	{amixer set Master 2%-,playerctl previous,playerctl play-pause,playerctl next}
+
+super + ctrl + {Up,Left,Down,Right}
+	bspc node -v {0 -20,-20 0,0 20,20 0}
+
+
+super + Tab
+	bspc node -f older.local
+
+
+ctrl + shift + {Up,Left,Down,Right}
+	bspc node -z {top 0 20,left 20 0,bottom 0 -20,right -20 0}
+
+alt + shift + {Up,Left,Down,Right}
+	bspc node -z {top 0 -20,left -20 0,bottom 0 20,right 20 0}
