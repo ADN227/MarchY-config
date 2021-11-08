@@ -80,4 +80,4 @@ Actualizar cambios con
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-basado en [wiki de Arch](https://wiki.archlinux.org/title/GRUB)
+basado en [wiki de Arch](https://wiki.archlinux.org/title/GRUB) y [Xenlism Grub Theme](https://www.gnome-look.org/p/1440862)
