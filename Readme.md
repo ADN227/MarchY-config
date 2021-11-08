@@ -52,7 +52,7 @@ basado en [wiki de Arch](https://wiki.archlinux.org/title/Sxhkd), [repo de Zatie
 ```
 basado en [wiki de polybar](https://gitlab.com/polybar/polybar/-/wikis/pages)
 
-##zsh y oh my zsh
+## zsh y oh my zsh
 ```
  cp zsh/.zshrc ~/.zshrc
  cp -r zsh/Imagenes ~/Imagenes
@@ -61,13 +61,13 @@ basado en [wiki de polybar](https://gitlab.com/polybar/polybar/-/wikis/pages)
 ```
 basado en [github de oh my zsh](https://github.com/ohmyzsh/ohmyzsh)
 
-##neofetch
+## neofetch
 ```
  cp neofetch/config.conf ~/.config/neofetch/config.conf
 ```
 basado en [wiki de neofetch](https://github.com/dylanaraps/neofetch/wiki) y [Repo de lolcat](https://github.com/jaseg/lolcat)
 
-##Grub
+## Grub
 ```
  cp -r grub2 ~/grub2
 ```
