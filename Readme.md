@@ -1,4 +1,5 @@
 # Mi configuracion de GNU Linux
+![deskys](https://github.com/ADN227/MarchY-config/blob/main/0.jpg)
 * **Window manager**
 * * xorg
 * * Bspwm 
